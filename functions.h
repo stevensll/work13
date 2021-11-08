@@ -1,4 +1,4 @@
-#define CHAR_SIZE 10
+#define CHAR_SIZE 32
 
 struct pop_entry{
 	int year;
