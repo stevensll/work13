@@ -1,14 +1,19 @@
-#DEFINE CHAR_SIZE 10
+#define CHAR_SIZE 10
+
 struct pop_entry{
-  int year;
-  int pop;
-  char boro[CHAR_SIZE];
+	int year;
+	int pop;
+	char boro[CHAR_SIZE];
 };
 
-int read_csv(char *PATH){};
+struct pop_entry * create_entry(int year, int pop, char * boro);
 
-int read_data(char *PATH){};
+void print_pop_entry(struct pop_entry * entry);
 
-int add_data(char *DATA){};
+int read_csv(char *PATH, char * OUT);
 
-int update_data(char *DATA){};
+struct pop_entry * read_data(char *PATH);
+
+void add_data(char *PATH);
+
+void update_data(char *PATH);
